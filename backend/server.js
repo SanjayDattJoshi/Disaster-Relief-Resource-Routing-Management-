@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from frontend
-const frontendPath = const frontendPath = path.join(process.cwd(), 'frontend');
-app.use(express.static(frontendPath));
 
+app.use(express.static(frontendPath));
+const frontendPath = path.join(process.cwd(), 'frontend');
 // MongoDB Connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/disaster-relief';
 
