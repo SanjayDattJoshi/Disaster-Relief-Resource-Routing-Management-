@@ -1,6 +1,5 @@
 // API Base URL — matches backend server.js PORT
-const API_URL = 'http://localhost:5000/api';
-
+const API_URL = 'https://disaster-relief-resource-routing-management-production.up.railway.app/api';
 // State
 let centers = [];
 let areas   = [];
